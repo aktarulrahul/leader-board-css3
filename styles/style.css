@@ -24,6 +24,45 @@ hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 30px;
 }
+
+/* Manu Bar */
+nav {
+  height: 94px;
+  background-color: #562eff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 15%;
+}
+.site-title {
+  display: flex;
+  align-items: center;
+}
+
+.site-title img {
+  height: 51px;
+  width: 42px;
+}
+.site-title a {
+  text-decoration: none;
+  font-size: 24px;
+  padding-left: 20px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 35px 20px;
+  color: white;
+  font-weight: 400;
+}
+
 /* top players style */
 .top-players {
   margin-bottom: 30px;
@@ -149,6 +188,22 @@ hr {
 /* Media Queries */
 /* Mobile Devices */
 @media only screen and (max-width: 688px) {
+  nav {
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 10px 0;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    margin: 0;
+  }
+  .menu-item {
+    padding: 10px;
+  }
   .container {
     width: 80%;
   }
@@ -162,6 +217,9 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .course {
+    margin-top: 20px;
   }
 }
 
@@ -179,5 +237,8 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .course {
+    margin-top: 20px;
   }
 }
