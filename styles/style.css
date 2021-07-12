@@ -75,11 +75,14 @@ hr {
 
 .blog-title {
   font-size: 20px;
+  height: 68px;
+  margin: 0;
 }
 
 .blog-author {
   color: #9f9f9f;
   font-size: 16px;
+  margin-top: 6px;
 }
 
 .blog-author a {
@@ -141,4 +144,40 @@ hr {
   padding: 4px 6px;
   background-color: #ffe4e8;
   border-radius: 100px;
+}
+
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 80%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 85%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
